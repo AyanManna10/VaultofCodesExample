@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Retro Tech Internship Programs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at center, #0c0c0c, #050505);
+      color: #00ffe0;
+      overflow-x: hidden;
+      padding: 60px 20px;
+    }
+
+    .gear-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      opacity: 0.2;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #00ffe0;
+      border-radius: 12px;
+      width: 280px;
+      padding: 25px;
+      color: #00ffe0;
+      box-shadow: 0 0 10px #00ffe0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffe0;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .card ul {
+      list-style: none;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .card ul li {
+      margin: 8px 0;
+    }
+
+    .card a {
+      background: #00ffe0;
+      color: #000;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #00aaff;
+      transform: translateY(-2px);
+    }
+
+    /* Animated gears */
+    .gear {
+      position: absolute;
+      fill: #00ffe0;
+      opacity: 0.1;
+    }
+
+    .gear1 {
+      top: 10%;
+      left: 5%;
+      width: 100px;
+      animation: rotate 20s linear infinite;
+    }
+
+    .gear2 {
+      bottom: 10%;
+      right: 5%;
+      width: 120px;
+      animation: rotateReverse 25s linear infinite;
+    }
+
+    .gear3 {
+      top: 50%;
+      left: 40%;
+      width: 80px;
+      animation: rotate 30s linear infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    @keyframes rotateReverse {
+      from { transform: rotate(360deg); }
+      to   { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated Background Gears -->
+  <div class="gear-bg">
+    <svg class="gear gear1" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke-width="10" stroke="currentColor" fill="none"/>
+    </svg>
+    <svg class="gear gear2" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke-width="10" stroke="currentColor" fill="none"/>
+    </svg>
+    <svg class="gear gear3" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" stroke-width="10" stroke="currentColor" fill="none"/>
+    </svg>
+  </div>
+
+  <!-- Internship Cards -->
+  <div class="container">
+    <div class="card">
+      <h3>Web Development Internship Program</h3>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://example.com" target="_blank">View Details</a>
+    </div>
+
+    <div class="card">
+      <h3>App Development Internship Program</h3>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://example.com" target="_blank">View Details</a>
+    </div>
+
+    <div class="card">
+      <h3>Python Programming Internship Program</h3>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://example.com" target="_blank">View Details</a>
+    </div>
+
+    <div class="card">
+      <h3>Java Programming Internship Program</h3>
+      <ul>
+        <li>Duration: 1 month/2 months</li>
+        <li>Location: Virtual</li>
+        <li>Stipend: -</li>
+        <li>Start date: 05/11/2023</li>
+      </ul>
+      <a href="https://example.com" target="_blank">View Details</a>
+    </div>
+  </div>
+</body>
+</html>
